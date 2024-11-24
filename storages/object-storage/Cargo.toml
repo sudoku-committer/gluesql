@@ -1,0 +1,23 @@
+[package]
+name = "object-storage"
+authors = [
+  "Alex D. <degt.alex.v@gmail.com>"
+]
+version.workspace = true
+edition.workspace = true
+description.workspace = true
+license.workspace = true
+repository.workspace = true
+documentation.workspace = true
+
+[dependencies]
+gluesql-core.workspace = true
+
+opendal = "0.50.1"
+
+[dev-dependencies]
+test-suite.workspace = true
+tokio = { version = "1", features = ["rt", "macros"] }
+
+[features]
+test-object = []
